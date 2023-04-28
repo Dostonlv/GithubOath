@@ -17,8 +17,8 @@ func Load() Config {
 		fmt.Println("No .env file found")
 	}
 	cfg := Config{}
-	cfg.ClientSecret = cast.ToString(getOrReturnDefaultValue("CLIENT_SECRET", "065df0c68b3a86f48379658ac62b469b571ba698"))
-	cfg.ClientId = cast.ToString(getOrReturnDefaultValue("CLIENT_ID", "d4e79e025942f9c04976"))
+	cfg.ClientSecret = cast.ToString(getOrReturnDefaultValue("CLIENT_SECRET", ""))
+	cfg.ClientId = cast.ToString(getOrReturnDefaultValue("CLIENT_ID", ""))
 	return cfg
 }
 
